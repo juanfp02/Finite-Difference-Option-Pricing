@@ -406,9 +406,11 @@ def plot_convergence_analysis(N_values, prices, analytical_price):
 def main():
     st.title("Option Pricing with Finite Difference Methods")
 
-    st.write("In this application, we explore 4 different FDM Methods applied to the pricing of European options."
-             "Please check out my github repo for the code implementation")
-
+    st.write("FDM are numerical techniques that can be used to approximate option values by discretizing the Black Scholes PDE solving it on a two-dimensional grid of spot prices and time")
+    st.write("")
+    st.write("Users can experiment with various option parameters and select from different FDM solvers, including Euler Explicit, Implicit, Crank-Nicolson, and 4th-order Runge-Kutta method.")
+    st.write("")
+    st.write("The project is implemented in Python and available in my github, we leverage the use of base classes to make it more readable")
 
     # Sidebar title and author info
     st.sidebar.title("Finite difference pricing App 📈")
