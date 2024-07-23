@@ -437,7 +437,7 @@ def main():
     # Calculate button
     st.sidebar.write("")  
     if st.sidebar.button("Calculate 💻"):
-        with st.spinner('Calculating...'):
+        with st.spinner('⌛ Calculating...'):
             # Create option and PDE
             option = Option(S=S, K=K, T=T, sigma=sigma, r=r, q=q, option_type=option_type)
             pde = BlackScholesPDE(option)
@@ -511,7 +511,7 @@ def main():
             col1, col2 = st.columns(2)
             
             with col1:
-                st.markdown("### Option Pricing Results")
+                st.markdown("### Option Pricing Results ⌛")
                 st.markdown(f"#### Calculated Option Price")
                 st.markdown(f"<div style='background-color:blue;padding:20px;font-size:30px;color:white;font-weight:bold;text-align:center'>{price:.6f}</div>", unsafe_allow_html=True)
                 st.markdown(f"#### Analytical Option Price")
