@@ -3,8 +3,3 @@ pandas
 numpy
 matplotlib
 scipy
-Option_Base.py
-FDM_base.py
-FDM_solvers.py
-helper_Functions.py
-BlackScholesPDE.py
