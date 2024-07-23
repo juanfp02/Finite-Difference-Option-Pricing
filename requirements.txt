@@ -1,8 +1,5 @@
 streamlit
 pandas
 numpy
-Option_Base
-FDM_base
-BlackScholesPDE
-FDM_solvers
-helper_Functions
+matplotlib
+scipy
