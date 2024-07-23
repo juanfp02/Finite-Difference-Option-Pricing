@@ -1,7 +1,5 @@
 import streamlit as st
 import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 from Option_Base import Option
 from FDM_base import FDMBase
 from BlackScholesPDE import BlackScholesPDE
