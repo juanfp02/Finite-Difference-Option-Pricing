@@ -3,6 +3,12 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from scipy.stats import norm
 
+"""
+This file serves only to launch the streamlit app, please refer to the other modules for a better structured code.
+JFPerez
+July
+"""
+
 
 class Option:
     def __init__(self, S, K, T, r, q, sigma, option_type='Call'):
