@@ -404,11 +404,11 @@ def plot_convergence_analysis(N_values, prices, analytical_price):
     st.pyplot(plt)
 
 def main():
-    st.title("Option Pricing with Finite Difference Methods")
+    st.title("Option Pricing with Finite Difference Methods 📊")
 
     st.write("FDM are numerical techniques that can be used to approximate option values by discretizing the Black Scholes PDE solving it on a two-dimensional grid of spot prices and time")
     st.write("")
-    st.write("Users can experiment with various option parameters and select from different FDM solvers, including Euler Explicit, Implicit, Crank-Nicolson, and 4th-order Runge-Kutta method.")
+    st.write("In this app, users might try with various option parameters and select different FDM solvers, including Euler Explicit, Implicit, Crank-Nicolson, and 4th-order Runge-Kutta method.")
     st.write("")
     st.write("The project is implemented in Python and available in my github, we leverage the use of base classes to make it more readable")
 
@@ -436,7 +436,7 @@ def main():
     
     # Calculate button
     st.sidebar.write("")  
-    if st.sidebar.button("Calculate"):
+    if st.sidebar.button("Calculate 💻"):
         with st.spinner('Calculating...'):
             # Create option and PDE
             option = Option(S=S, K=K, T=T, sigma=sigma, r=r, q=q, option_type=option_type)
