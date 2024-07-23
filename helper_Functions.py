@@ -53,25 +53,6 @@ def solve_tridiagonal(coefficients, upper, main, lower, lower_bound, upper_bound
         solution[0] = coefficients[0]
         return solution
 
-    
-def plot_surface(S_mesh, T_mesh, C_mesh):
-    fig = plt.figure(figsize=(16, 8))
-    ax = fig.add_subplot(111, projection='3d')
-    ax.plot_surface(S_mesh, T_mesh, C_mesh, cmap='viridis')
-
-    ax.set_xlabel('Asset Price (S)')
-    ax.set_ylabel('Time Remaining (T-t)')
-    ax.set_zlabel('Option Price (C)')
-    plt.title('Option Price Surface')
-    st.pyplot(plt)
-
-
-
-def normalize(array):
-    min_val = np.min(array)
-    max_val = np.max(array)
-    return (array - min_val) / (max_val - min_val)
-
 
 def plot_convergence_analysis(N_values, prices, analytical_price):
     fig = plt.figure(figsize=(16, 8))
