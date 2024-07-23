@@ -511,7 +511,7 @@ def main():
             col1, col2 = st.columns(2)
             
             with col1:
-                st.markdown("### Option Pricing Results ⌛")
+                st.markdown("### Option Pricing Results 📜")
                 st.markdown(f"#### Calculated Option Price")
                 st.markdown(f"<div style='background-color:blue;padding:20px;font-size:30px;color:white;font-weight:bold;text-align:center'>{price:.6f}</div>", unsafe_allow_html=True)
                 st.markdown(f"#### Analytical Option Price")
@@ -538,13 +538,13 @@ def main():
                     convergence_prices.append(price)
                 
             with col2:
-                st.markdown("### FDM Method Details")
+                st.markdown("### FDM Method Details 📎")
                 st.markdown(f"#### {fdm_method} Method")
                 st.markdown("##### Coefficients:")
                 st.latex(coeffs)
 
         #Plot convergence analysis
-        st.header("Convergence Analysis")
+        st.header("Convergence Analysis 📐")
         plot_convergence_analysis(N_values, convergence_prices, analytical_price)
                 
 if __name__ == '__main__':
